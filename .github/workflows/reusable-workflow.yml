@@ -1,8 +1,4 @@
 name: Reusable Workflow
 
 on:
-  workflow_call:
-    inputs:
-      node:
-        required: true
-        type: string
+
