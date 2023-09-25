@@ -1,14 +1,13 @@
 name: Reusable Workflow
 
 on:
-  workflow_call:
-    inputs:
-      node:
-        required: true
-        type: string
+  call-reusable-workflow:
+  uses: ./.github/workflows/reusable-workflow.yml
+  with:
+    node: 14
 
 jobs:
-  build:
+  build
     runs-on: ubuntu-latest
 
     steps:
